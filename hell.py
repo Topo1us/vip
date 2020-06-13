@@ -1,6 +1,7 @@
+#!/usr/bin/python
 import tkinter
 from tkinter import *
-ok=Tk()
+ok=tkinter.Tk()
 ok.configure(bg='black')
 ok.title('Termux Cod')
 lat=Label(ok,text='если у вас нет кода доступа\nобратитесь в тех.поддержку группы Termux Cod.',bg='black',fg='yellow')
