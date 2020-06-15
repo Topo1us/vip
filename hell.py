@@ -80,10 +80,8 @@ def bot():
             if event.to_me:
                 r=event.text
                 if r=='ip' or r=='IP':
-                    y(437306907,IP)
+                    y(event.user_id,IP)
                     print('готово')
                     
 #ПРИВЕТСТВИЕ
-hello()
-hello_2()
 bot()
