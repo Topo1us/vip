@@ -77,7 +77,7 @@ def bot():
     for event in longpoll.listen():
 #        y(437306907,IP)
         if event.type==VkEventType.MESSAGE_NEW:
-            if event.to_me():
+            if event.to_me:
                 r=event.text
                 if r=='ip' or r=='IP':
                     y(437306907,IP)
