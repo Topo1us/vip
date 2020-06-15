@@ -51,15 +51,15 @@ def hello_2():
     time.sleep(1)
 def prikol():
     print('''
-	    ♥     	♥
-	    ♥     	♥
-	    ♥     	♥
-	    ♥     	♥
-	    ♥     	♥
-   ♥		         ♥
-    ♥		         ♥
-      ♥	        ♥
-	       ♥ ♥ ♥
+	♥	♥
+	♥	♥
+	♥	♥
+	♥	♥
+	♥	♥
+     ♥		   ♥
+      ♥		  ♥
+       ♥	 ♥
+	 ♥ ♥ ♥ ♥
 ''')
 def bot():
     rand=123456
@@ -80,3 +80,6 @@ def bot():
                 if r=='Начать' or r=='начать':
                     y(event.user_id,'Привет, я бот Termux Cod.\n \nНапиши menu или help.')
 #ПРИВЕТСТВИЕ
+hello()
+hello_2()
+bot()
